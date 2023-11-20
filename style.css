@@ -1,0 +1,117 @@
+:root {
+/**Primary**/
+
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+ /**Neutral**/
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+
+/***/
+
+--padding: 2rem;
+--margin: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: auto;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: var(--margin);
+    display: grid;
+    place-content: center;
+}
+
+.top {
+    text-align: center;
+}
+
+.heading {
+    color: var(--Grayish-Blue);
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.bold {
+    color: var(--Very-Dark-Blue);
+    font-size: 20px;
+    font-weight: 600;
+}
+.top-text {
+    margin-top: var(--margin);
+}
+.text {
+    color: var(--Grayish-Blue);
+    font-weight: 200;
+}
+
+.title {
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.boxes {
+    margin-top: var(--padding);
+    padding: var(--margin);
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.supervisor {
+    border-top: 5px solid var(--Cyan);
+}
+
+.team_builder {
+    border-top: 5px solid var(--Red);
+}
+
+.karma {
+    border-top: 5px solid var(--Orange);
+}
+
+.calculator {
+    border-top: 5px solid var(--Blue);
+}
+
+@media only screen and (min-width: 768px)
+{
+    .container {
+        max-width: 1200px;
+    }
+
+    .card {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: var(--margin);
+    }
+
+    .calculator, .supervisor {
+        align-self: center;
+    }
+
+
+}
